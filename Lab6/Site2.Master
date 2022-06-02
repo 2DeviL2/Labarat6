@@ -1,0 +1,42 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site2.master.cs" Inherits="Lab6.Site2" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                <asp:Panel ID="Panel1" runat="server" BackColor="#CCCCCC">
+                    <div>
+            <div class="auto-style1">
+            Это содержание мастер страницы
+            </div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                <p class="auto-style1">
+                    Это содержимое по умолчанию PlaceHolder1</p>
+                <p class="auto-style1">
+                    <span style="font-family: 'Microsoft Sans Serif'">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<span>&nbsp;</span></span></p>
+            </asp:ContentPlaceHolder>
+            <br />
+            <br />
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+                </asp:Panel>
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
